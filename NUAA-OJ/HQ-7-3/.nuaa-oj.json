@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-7-3",
+  "pid": 1973,
+  "title": "连续整数的整除问题",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "1 10 3",
+      "output": "3 6 9"
+    }
+  ],
+  "allowedLanguages": [
+    "C"
+  ],
+  "description": "输入三个正整数min、max和factor，对于min到max之间的每一个整数（包括min和max），如果它能被factor整除，就把它输出。要求编写一个函数判断一个正整数n是否能被factor整除，如果能整除则返回值为1，否则返回值为0，函数原型为：unsigned canDiv(unsigned n, unsigned factor)，然后在主函数中通过调用这个函数来判断min和max之间的数是否能被factor整除然后进行输出。",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-7-3",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-7-3.c",
+  "language": "C"
+}

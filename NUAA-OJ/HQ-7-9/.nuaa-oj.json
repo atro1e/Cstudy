@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-7-9",
+  "pid": 1977,
+  "title": "空间站舱段转位调度问题",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "3",
+      "output": "A -> C\nA -> B\nC -> B\nA -> C\nB -> A\nB -> C\nA -> C"
+    }
+  ],
+  "allowedLanguages": [
+    "C"
+  ],
+  "description": "空间站装配任务中设有三个停泊工位，分别记为A、B、C。初始时，A工位上停泊着 n个尺寸不同的航天器舱段，按尺寸由大到小从内侧到外侧排列，即大舱段在内侧、小舱段在外侧。现需要利用机械臂将所有舱段从A工位转移到C工位，转移过程中可借助B工位。转位规则如下：\n1、每次机械臂只能转移一个舱段；\n2、每次只能抓取某个停泊工位最外侧的舱段；\n3、任何时刻都不能将大尺寸舱段停泊在小尺寸舱段的外侧，以避免遮挡和对接干涉。\n请按照最优转位方案输出每一步的舱段转移过程。要求使用递归函数调用。\n",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-7-9",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-7-9.c",
+  "language": "C"
+}

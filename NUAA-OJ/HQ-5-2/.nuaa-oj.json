@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-5-2",
+  "pid": 2031,
+  "title": "无人机试飞架次航程排序",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "5\n1900 450 800 1200 600",
+      "output": "2 5 3 4 1\n450 1900"
+    },
+    {
+      "input": "4\n800 450 800 600",
+      "output": "2 4 1 3\n450 800"
+    }
+  ],
+  "allowedLanguages": [
+    "C",
+    "C With O2",
+    "C++",
+    "C++ With O2",
+    "C++ 17",
+    "C++ 17 With O2",
+    "C++ 20",
+    "C++ 20 With O2",
+    "Java",
+    "Python3",
+    "Python2",
+    "Golang",
+    "C#",
+    "PHP",
+    "PyPy2",
+    "PyPy3",
+    "JavaScript Node",
+    "JavaScript V8",
+    "Ruby",
+    "Rust"
+  ],
+  "description": "“启直5号”试飞记录了若干架次的航程（单位：km）。架次按输入顺序从 1 开始编号，不需要输入。请用冒泡排序按航程从短到长排序，输出排序后的架次号序列，以及最短、最长航程。",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-5-2",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-5-2.c",
+  "language": "C"
+}

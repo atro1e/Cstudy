@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-6-3",
+  "pid": 2004,
+  "title": "卫星遥测帧同步字检测与异或校验",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "EB900101",
+      "output": "SYNC OK\nCHECK OK\n01"
+    }
+  ],
+  "allowedLanguages": [
+    "C",
+    "C With O2",
+    "C++",
+    "C++ With O2",
+    "C++ 17",
+    "C++ 17 With O2",
+    "C++ 20",
+    "C++ 20 With O2",
+    "Java",
+    "Python3",
+    "Python2",
+    "Golang",
+    "C#",
+    "PHP",
+    "PyPy2",
+    "PyPy3",
+    "JavaScript Node",
+    "JavaScript V8",
+    "Ruby",
+    "Rust"
+  ],
+  "description": "\n某型卫星遥测数据按帧下传：每帧以 2 字节同步字 0xEB、0x90 开头，随后是若干数据字节，最后 1 字节为异或校验字节。\n\n校验字节等于所有数据字节按位异或的结果（同步字与校验字节本身不参与异或）。\n\n地面站收到一帧的十六进制字符串后，需要判断同步字是否正确、校验是否通过，并给出程序算出的校验值。\n\n**数据范围：**\n\n- 4 ≤ n ≤ 32，其中 n 为字节数，即 8 ≤ |h| ≤ 64，且 |h| 为偶数。\n- h 仅含 0-9 与 A-F。\n- 第 1、2 字节为同步字（可能不是 EB 90，需要程序判定）。\n- 最后一个字节为校验字节，中间至少有 1 个数据字节。\n",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-6-3",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-6-3.c",
+  "language": "C"
+}

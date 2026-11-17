@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-5-4",
+  "pid": 2036,
+  "title": "左右排布的矩阵求和",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "2 2\n1 2 5 6\n3 4 7 8",
+      "output": "6 8\n10 12"
+    },
+    {
+      "input": "2 3\n-1 0 3 4 0 -3\n5 -6 2 -2 1 8",
+      "output": "3 0 0\n3 -5 10"
+    }
+  ],
+  "allowedLanguages": [
+    "C"
+  ],
+  "description": "给定两个均为N行M列的整数矩阵A和B。两个矩阵以左右排布的方式输入：每行的前M个整数属于矩阵A，后M个整数属于矩阵B。\n\n请计算矩阵C，使C的每个元素等于A和B对应位置元素的和，并输出矩阵C。",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-5-4",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-5-4.c",
+  "language": "C"
+}

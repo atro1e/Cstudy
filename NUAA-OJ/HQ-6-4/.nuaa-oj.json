@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-6-4",
+  "pid": 2005,
+  "title": "IMO 船舶识别号校验",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "9074729",
+      "output": "9\nVALID\n9074729"
+    }
+  ],
+  "allowedLanguages": [
+    "C",
+    "C With O2",
+    "C++",
+    "C++ With O2",
+    "C++ 17",
+    "C++ 17 With O2",
+    "C++ 20",
+    "C++ 20 With O2",
+    "Java",
+    "Python3",
+    "Python2",
+    "Golang",
+    "C#",
+    "PHP",
+    "PyPy2",
+    "PyPy3",
+    "JavaScript Node",
+    "JavaScript V8",
+    "Ruby",
+    "Rust"
+  ],
+  "description": "\n国际海事组织（IMO）为每艘商船分配 7 位识别号：前 6 位为船舶序号，第 7 位为校验位。\n\n校验位算法：把前 6 位数字从左到右分别乘以 7、6、5、4、3、2，求和后对 10 取余。\n\n例如 9074729：\n\n9×7 + 0×6 + 7×5 + 4×4 + 7×3 + 2×2 = 139\n\n139 % 10 = 9，与第 7 位相同，故合法。\n\n某航运公司录入了一批船号，需要程序判断格式是否合法、校验位是否正确，并输出修正后的识别号。\n\n**数据范围：**\n\n- 1 ≤ |s| ≤ 12，s 不含空白字符。\n- 格式合法时，识别号为 1000000～9999999，即首位为 1～9，其余位为 0～9。\n",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-6-4",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-6-4.c",
+  "language": "C"
+}

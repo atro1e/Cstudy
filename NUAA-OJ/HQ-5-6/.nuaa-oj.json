@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-5-6",
+  "pid": 2038,
+  "title": "排队的最少交换次数",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "4\n4 3 2 1",
+      "output": "6"
+    },
+    {
+      "input": "5\n3 1 4 5 2",
+      "output": "4"
+    }
+  ],
+  "allowedLanguages": [
+    "C"
+  ],
+  "description": "体育课上，N名学生排成一列，每名学生都有一个不同的整数编号。老师希望他们按照编号从小到大的顺序重新排队。\n\n调整队伍时，每次只能让相邻的两名学生交换位置。给定学生当前的排列顺序，请计算完成排队所需的最少交换次数。",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-5-6",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-5-6.c",
+  "language": "C"
+}

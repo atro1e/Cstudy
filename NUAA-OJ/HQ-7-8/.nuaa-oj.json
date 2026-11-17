@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-7-8",
+  "pid": 1976,
+  "title": "航天器任务兼容编号对判定",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "220 284",
+      "output": "YES"
+    },
+    {
+      "input": "9 4",
+      "output": "NO"
+    }
+  ],
+  "allowedLanguages": [
+    "C"
+  ],
+  "description": "在深空探测任务中，每台航天器都会被分配一个正整数任务编号。为了判断两台航天器是否可以编入同一协同任务组，任务规划系统需要分析它们的编号兼容性。若第一个任务编号除它本身以外的所有正因数之和，恰好等于第二个任务编号；并且第二个任务编号除它本身以外的所有正因数之和，也恰好等于第一个任务编号，则称这两个任务编号构成“兼容编号对”，对应的两台航天器可编入同一协同任务组。例如：\n编号 9 除自身外的正因数和为：1 + 3 = 4；\n编号 4 除自身外的正因数和为：1 + 2 = 3；\n因此 9 和 4 不构成兼容编号对。\n编号 220 除自身外的正因数和为：1 + 2 + 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 + 110 = 284；\n编号 284 除自身外的正因数和为：1 + 2 + 4 + 71 + 142 = 220；\n因此 220 和 284 构成兼容编号对。\n请编写程序，判断给定的两个航天器任务编号是否构成兼容编号对。要求编写一个函数用于计算一个正整数的正因数和，原型为：unsigned factorSum(unsigned n)。然后主函数通过调用这个函数来判断两个任务编号是否构成兼容编号对。\n",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-7-8",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-7-8.c",
+  "language": "C"
+}

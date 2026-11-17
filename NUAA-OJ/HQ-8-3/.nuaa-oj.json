@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-8-3",
+  "pid": 2021,
+  "title": "无人机飞行高度异常监测",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "8 100 300\n120 95 180 305 300 100 80 250",
+      "output": "3"
+    }
+  ],
+  "allowedLanguages": [
+    "C",
+    "C With O2",
+    "C++",
+    "C++ With O2",
+    "C++ 17",
+    "C++ 17 With O2",
+    "C++ 20",
+    "C++ 20 With O2",
+    "Java",
+    "Python3",
+    "Python2",
+    "Golang",
+    "C#",
+    "PHP",
+    "PyPy2",
+    "PyPy3",
+    "JavaScript Node",
+    "JavaScript V8",
+    "Ruby",
+    "Rust"
+  ],
+  "description": "\n某无人机执行巡航任务时，机载传感器每隔固定时间采集一次飞行高度。\n\n为了保障飞行安全，系统需要检查采集到的高度是否位于规定的安全范围内。\n\n如果高度低于最低安全高度 `L`，或者高于最高安全高度 `R`，则认为该次测量存在异常；位于 `[L, R]` 范围内的高度属于正常数据。\n\n请编写 C 语言程序，通过以下函数统计飞行高度异常的次数。\n\n```c\nint countAbnormal(int height[], int n, int L, int R);\n```\n\n**要求：**\n\n在 `main()` 函数中完成数据输入和结果输出，由 `countAbnormal()` 函数完成异常数量统计。\n\n**数据范围：**\n\n- 1 ≤ n ≤ 1000。\n- 0 ≤ L ≤ R ≤ 10000。\n- 0 ≤ height_i ≤ 20000。\n",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-8-3",
+  "solutionFile": "HQ-8-3.c",
+  "language": "C",
+  "selectedLanguage": "C"
+}

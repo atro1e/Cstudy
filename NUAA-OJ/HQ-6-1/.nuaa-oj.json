@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-6-1",
+  "pid": 2002,
+  "title": "单词大小写互换",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "a",
+      "output": "A"
+    }
+  ],
+  "allowedLanguages": [
+    "C",
+    "C With O2",
+    "C++",
+    "C++ With O2",
+    "C++ 17",
+    "C++ 17 With O2",
+    "C++ 20",
+    "C++ 20 With O2",
+    "Java",
+    "Python3",
+    "Python2",
+    "Golang",
+    "C#",
+    "PHP",
+    "PyPy2",
+    "PyPy3",
+    "JavaScript Node",
+    "JavaScript V8",
+    "Ruby",
+    "Rust"
+  ],
+  "description": "\n航空电报与飞行计划报文中，字符的大小写形式经常需要统一。给定一个由大写字母、小写字母和数字组成的单词，请把其中的大写字母改写为小写、小写字母改写为大写，数字保持原样。\n\n下面的程序试图完成上述功能，但存在若干逻辑错误（程序可以编译）。\n\n请调试并改正程序，使其对满足数据范围的任意输入都能输出正确结果。\n\n只允许修改现有语句与表达式，不得改变输入输出格式，不得使用 gets()；提交改正后的完整源程序。\n\n**错误程序：**\n\n```c\n#include <stdio.h>\n#include <string.h>\n\nint main(void)\n{\n    char s[105];\n    int i, n;\n\n    scanf(\"%s\", s);\n    n = (int)strlen(s);\n    for (i = 0; i < n - 1; i++) {\n        if (s[i] >= 'a' && s[i] <= 'z')\n            s[i] = s[i] - 32;\n        else if (s[i] >= 'A' || s[i] <= 'Z')\n            s[i] = s[i] + 32;\n    }\n    printf(\"%s\\n\", s);\n    return 0;\n}\n```\n\n**数据范围：**\n\n- 1 ≤ |s| ≤ 100（|s| 为字符个数，不含结尾的 '\\0'）。\n- s 仅由英文大写字母、小写字母和数字组成。\n",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-6-1",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-6-1.c",
+  "language": "C"
+}

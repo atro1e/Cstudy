@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-6-9",
+  "pid": 2010,
+  "title": "航路子串查找与计数",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "aaaa\naa",
+      "output": "1\n3"
+    }
+  ],
+  "allowedLanguages": [
+    "C",
+    "C With O2",
+    "C++",
+    "C++ With O2",
+    "C++ 17",
+    "C++ 17 With O2",
+    "C++ 20",
+    "C++ 20 With O2",
+    "Java",
+    "Python3",
+    "Python2",
+    "Golang",
+    "C#",
+    "PHP",
+    "PyPy2",
+    "PyPy3",
+    "JavaScript Node",
+    "JavaScript V8",
+    "Ruby",
+    "Rust"
+  ],
+  "description": "\n航路点序列匹配中，需要在一段航路字符串中查找给定的模式串。\n\n给定主串 S 与模式串 P（均为小写字母），求 P 在 S 中第一次出现的起始位置（从 1 开始计数），以及 P 在 S 中出现的总次数。\n\n注意：允许重叠匹配。例如 S = aaaa、P = aa 时，P 共出现 3 次。\n\n**数据范围：**\n\n- 1 ≤ |S| ≤ 200。\n- 1 ≤ |P| ≤ 20。\n- S、P 仅由小写英文字母组成。\n",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-6-9",
+  "solutionFile": "HQ-6-9.c",
+  "language": "C",
+  "selectedLanguage": "C"
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "kind": "problem",
+  "displayId": "HQ-7-4",
+  "pid": 1974,
+  "title": "整数阶乘",
+  "timeLimit": 1000,
+  "memoryLimit": 256,
+  "isFileIO": false,
+  "ioReadFileName": null,
+  "ioWriteFileName": null,
+  "samples": [
+    {
+      "input": "5",
+      "output": "120"
+    }
+  ],
+  "allowedLanguages": [
+    "C"
+  ],
+  "description": "读入一个正整数n，计算并输出n的阶乘。要求使用递归函数调用来求阶乘。",
+  "codeTemplates": {},
+  "url": "https://oj.nuaa.edu.cn/problem/HQ-7-4",
+  "selectedLanguage": "C",
+  "solutionFile": "HQ-7-4.c",
+  "language": "C"
+}
